@@ -1,0 +1,19 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: svarion-tiny-printer_server_1
+      APP_PORT: 3000
+      # Device clients cannot send Umbrel browser-login cookies; the server enforces Bearer auth.
+      PROXY_AUTH_WHITELIST: "/api/*,/healthz"
+
+  server:
+    image: docker.io/svarion0/tiny-printer:0.8.0@sha256:0000000000000000000000000000000000000000000000000000000000000000
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    environment:
+      DATA_DIR: /data
+      DEVICE_TOKEN: ${APP_SVARION_TINY_PRINTER_DEVICE_TOKEN}
+      SHOW_TOKEN_ON_STATUS_PAGE: "true"
