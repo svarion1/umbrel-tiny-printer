@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: automation
 name: TinyPrinter
-version: "0.8.5"
+version: "0.8.6"
 tagline: Little Printer receipts for your Sunmi V2
 icon: https://raw.githubusercontent.com/svarion1/umbrel-tiny-printer/master/svarion-tiny-printer/icon.svg
 description: >-
@@ -20,7 +20,7 @@ description: >-
   receipts for the built-in Sunmi printer. The browser status page shows queue counts and connection
   details; Umbrel login protects the page, while device API requests use their own Bearer token.
 releaseNotes: >-
-  Add on-demand SVG label printing via API and Telegram.
+  Add a daily extra (Accadde oggi, word of the day, or quote) to the morning edition.
 
 developer: Svarion
 website: https://github.com/svarion1/TinyPrinter
