@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: automation
 name: TinyPrinter
-version: "0.8.2"
+version: "0.8.3"
 tagline: Little Printer receipts for your Sunmi V2
 icon: https://raw.githubusercontent.com/svarion1/umbrel-tiny-printer/master/svarion-tiny-printer/icon.svg
 description: >-
