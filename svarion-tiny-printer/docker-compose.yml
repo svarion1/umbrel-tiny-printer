@@ -7,7 +7,7 @@ services:
       PROXY_AUTH_WHITELIST: "/api/*,/healthz"
 
   server:
-    image: docker.io/svarion0/tiny-printer:0.8.4@sha256:939919873f22630b6c41bb2917bb7c4a0a8c168e5ae8a673e4848da7cc707dfb
+    image: docker.io/svarion0/tiny-printer:0.8.5@sha256:08237b6018a3981cd9e46b672ced7da6c2428d1d58aa5e2e971158042fa84e8a
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data:/data
