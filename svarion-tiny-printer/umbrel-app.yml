@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: automation
 name: TinyPrinter
-version: "0.8.11"
+version: "0.9.0"
 tagline: Little Printer receipts for your Sunmi V2
 icon: https://raw.githubusercontent.com/svarion1/umbrel-tiny-printer/master/svarion-tiny-printer/icon.svg
 description: >-
@@ -20,7 +20,8 @@ description: >-
   receipts for the built-in Sunmi printer. The browser status page shows queue counts and connection
   details; Umbrel login protects the page, while device API requests use their own Bearer token.
 releaseNotes: >-
-  Added a banner print mode that renders large rotated text along the paper via the API.
+  Internal server refactors: unified print capability, draft/confirmation lifecycle, bot
+  interaction, composition, and compose alignment with no intended user-visible behavior changes.
 
 developer: Svarion
 website: https://github.com/svarion1/TinyPrinter
