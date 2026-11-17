@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: automation
 name: TinyPrinter
-version: "0.9.4"
+version: "0.9.5"
 tagline: Little Printer receipts for your Sunmi V2
 icon: https://raw.githubusercontent.com/svarion1/umbrel-tiny-printer/master/svarion-tiny-printer/icon.svg
 description: >-
@@ -20,8 +20,9 @@ description: >-
   receipts for the built-in Sunmi printer. The browser status page shows queue counts and connection
   details; Umbrel login protects the page, while device API requests use their own Bearer token.
 releaseNotes: >-
-  Added more built-in label icons for pantry, tech, and household labels. Labels can now auto-size
-  to fit wrapped text, and cable labels can be printed lengthwise so text runs along the label.
+  Corrective release that supersedes the mistagged v0.9.4 and includes the intended 0.9.4 changes:
+  improved Android print reliability and printer status handling, refactored server print/bot
+  internals, and added guardrail tests with Android API 25 compatibility verification.
 
 developer: Svarion
 website: https://github.com/svarion1/TinyPrinter
